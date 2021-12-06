@@ -1,0 +1,199 @@
+/*Estilos Generales*/
+
+body {
+    background-color: #141414;
+    color: white;
+    /*tipogafia google fonts*/
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #6EBD8C;
+}
+
+h2 {
+    color: #6EBD8C;
+}
+
+hr {
+    border-color: #570057 !important;
+}
+
+
+/*Fin Estilos Generales*/
+
+.imagenSobremi {
+    width: 420px;
+}
+
+
+/*Menu de navegacion*/
+
+li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+
+/************************/
+
+
+/*Estilos flexbox*/
+
+
+/*Seccion Inicio*/
+
+.contenedor-titulo {
+    margin-top: 110px;
+}
+
+.logo {
+    position: absolute;
+    top: -25px;
+}
+
+.contenedor-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*Fin seccion inicio*/
+
+
+/*Footer*/
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+}
+
+.redes {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.redes:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-image: linear-gradient(#141414, #252525);
+}
+
+
+/*Seccion Sobre mi*/
+
+.contenedor-main {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-sobremi {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    margin-top: 70px;
+    margin-right: 240px;
+}
+
+
+/*Fin seccion Sobre mi*/
+
+
+/*Seccion Habilidades*/
+
+.grilla {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.habilidades {
+    margin-top: 150px;
+    margin-right: 120px;
+}
+
+@media (max-width: 599px) {
+    .habilidades {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .grilla {
+        margin-left: 10px;
+        margin-right: 0;
+        display: block;
+    }
+    .carousel-item {
+        width: 100%;
+    }
+    .carousel-inner {
+        width: 100%;
+        margin: 0px;
+    }
+    .redes {
+        margin: 20px;
+    }
+}
+
+
+/*Fin Seccion Habilidades*/
+
+
+/* SMARTPHONE */
+
+@media (max-width: 599px) {
+    .fondo {
+        font-size: 25px;
+    }
+    .contenedor-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .contenedor-titulo {
+        margin-top: -30px;
+    }
+    .redes {
+        margin: 20px;
+    }
+    .copy {
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor-section {
+        display: block;
+    }
+}
+
+
+/*Seccion Portfolio*/
+
+.titulo-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 599px) {
+    .portfolio {
+        display: block;
+    }
+    .titulo-portfolio {
+        margin-top: 0px;
+    }
+}
+
+
+/*Seccion Contacto*/
